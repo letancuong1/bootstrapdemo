@@ -11,6 +11,7 @@ import {
 import Login from './templates/login';
 import Register from './templates/register';
 import Examp from './examp'
+import Examp1 from './examp1'
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
@@ -19,6 +20,7 @@ ReactDOM.render(
       <Route path="/login" element={<Login/>}/>
       <Route path="/register" element={<Register/>} />
       <Route path="/examp" element={<Examp/>}/>
+      <Route path="/examp1" element={<Examp1/>}/>
     </Routes>
     </BrowserRouter>
   </React.StrictMode>,

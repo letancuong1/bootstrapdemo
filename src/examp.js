@@ -61,7 +61,7 @@ export default class Examp extends Component {
       list:newlist
     })
   }
-  xem=(e)=>{
+  showedit=(e)=>{
     var id=e.target.id
     var list=this.state.list
     for(var i=0;i<list.length;i++){
@@ -164,7 +164,7 @@ export default class Examp extends Component {
             <td>{item.quatity}</td>
             <td>{item.description}</td>
             <td>
-              <button type="button" data-toggle="modal" id={item.id} onClick={this.xem} data-target={'#myModal'+item.id} className="btn btn-secondary">Sửa</button>
+              <button type="button" data-toggle="modal" id={item.id} onClick={this.showedit} data-target={'#myModal'+item.id} className="btn btn-secondary">Sửa</button>
               <div className="modal fade" id={"myModal"+item.id}>
                 <div className="modal-dialog modal-dialog-centered">
                   <div className="modal-content">
